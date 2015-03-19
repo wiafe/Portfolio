@@ -202,31 +202,35 @@ a {
   a:hover {
     color: #3498db; }
 
-/* line 22, ../sass/base/_base.sass */
+/* line 18, ../sass/base/_base.sass */
+.text-accent {
+  color: #3498db; }
+
+/* line 24, ../sass/base/_base.sass */
 .main-nav {
   max-width: 265px;
   margin: 0 auto;
   display: flex; }
-  /* line 29, ../sass/base/_base.sass */
+  /* line 31, ../sass/base/_base.sass */
   .main-nav a {
     padding-left: 10px;
     padding-right: 10px; }
-    /* line 33, ../sass/base/_base.sass */
+    /* line 35, ../sass/base/_base.sass */
     .main-nav a:hover, .main-nav a :focus {
       box-shadow: 0px 1px 2px 1px #3498db; }
 
-/* line 37, ../sass/base/_base.sass */
+/* line 39, ../sass/base/_base.sass */
 footer {
   position: relative;
-  bottom: -35%;
+  bottom: 0%;
   max-width: 265px;
-  margin: 0 auto;
+  left: 36%;
   display: flex; }
-  /* line 44, ../sass/base/_base.sass */
+  /* line 46, ../sass/base/_base.sass */
   footer a {
     padding-right: 10px;
     padding-left: 10px; }
-    /* line 48, ../sass/base/_base.sass */
+    /* line 50, ../sass/base/_base.sass */
     footer a:hover, footer a :focus {
       box-shadow: 0px 1px 2px 1px #3498db; }
 
@@ -318,3 +322,56 @@ section {
       padding-top: 20px;
       padding-left: 20px;
       max-width: 500px; }
+
+/* line 1, ../sass/modules/_projects.sass */
+.projects {
+  position: relative;
+  width: auto;
+  height: 94%;
+  border: 2px dashed; }
+  /* line 7, ../sass/modules/_projects.sass */
+  .projects .project {
+    border: 2px solid black;
+    width: auto;
+    display: flex;
+    height: 177px; }
+    /* line 13, ../sass/modules/_projects.sass */
+    .projects .project .finished {
+      width: 200px;
+      height: 177px; }
+    /* line 18, ../sass/modules/_projects.sass */
+    .projects .project .one {
+      background: url(../img/chris.png);
+      background-position: center;
+      background-size: cover; }
+      /* line 24, ../sass/modules/_projects.sass */
+      .projects .project .one .chris-text {
+        display: none; }
+      /* line 30, ../sass/modules/_projects.sass */
+      .projects .project .one:hover:after {
+        content: "";
+        opacity: 0.9;
+        width: 200px;
+        height: 177px;
+        background: url(../img/chris.png);
+        background-position: center;
+        background-size: cover; }
+    /* line 40, ../sass/modules/_projects.sass */
+    .projects .project .two {
+      background: url(../img/justicek.png);
+      background-position: center;
+      background-size: cover; }
+    /* line 46, ../sass/modules/_projects.sass */
+    .projects .project .three {
+      background: url(../img/calc.png);
+      background-position: center;
+      background-size: cover; }
+
+/* line 1, ../sass/modules/_chris.sass */
+.prjpic {
+  background: url(../img/chris.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 200px; }
