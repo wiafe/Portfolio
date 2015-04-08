@@ -2,19 +2,22 @@
 	position: relative
 	width: auto
 	height: 94%
-	border: 2px dashed
+	padding-top: 20px
+	padding-bottom: 20px
+	//border: 2px dashed
 
 	.project
-		border: 2px solid black
+		//border: 2px solid black
 		width: auto
 		display: flex
 		height: 177px
 
 		.finished
 			//border: 2px dotted
-			width: 200px
-			height: 177px
-			
+			margin: 0 auto
+			+size(175px)
+
+
 		.one
 			background: url(../img/chris.png)
 			background:
@@ -45,6 +48,18 @@
 
 		.three
 			background: url(../img/calc.png)
+			background:
+				position: center
+				size: cover
+
+		.four
+			background: url(../img/calc.png)
+			background:
+				position: center
+				size: cover
+
+		.five
+			background: url(../img/chris.png)
 			background:
 				position: center
 				size: cover

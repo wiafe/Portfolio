@@ -9,21 +9,33 @@ myApp.config(['$routeProvider', function($routeProvider) {
 	$routeProvider.
 		when('/projects', {
 			templateUrl: 'views/projects.html',
-			controller: 'RegistrationController'
+			controller: 'NameController'
 		}).
 		when('/welcome', {
 			templateUrl: 'views/welcome.html',
-			controller: 'RegistrationController'
+			controller: 'NameController'
 		}).
 		when('/contact', {
 			templateUrl: 'views/contact.html',
-			controller: 'RegistrationController'
+			controller: 'NameController'
 		}).
+        when('/massage', {
+            templateUrl : 'views/project/massage.html',
+            controller  : 'NameController'
+        }).
+        when('/extra', {
+            templateUrl: 'views/extra.html',
+            controller: 'NameController'
+        }).
 		when('/skills', {
 			templateUrl: 'views/skills.html',
-			controller: 'MeetingsController'
+			controller: 'NameController'
 		}).
+        when('/hello', {
+            templateUrl: 'views/hello.html',
+            controller: 'NameController'
+        }).
 		otherwise({
-			redirectTo: '/welcome' //starts at login.html if they haven't logged in!
+			redirectTo: 'hello'
 		});
 }]);
