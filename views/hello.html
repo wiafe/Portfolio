@@ -3,11 +3,13 @@
         display: none;
     }
 </style>
-<h1>HELLO!!!</h1>
-<form name="myform" ng-submit="login()">
+<div class="intro">
+<h1 style="text-align: center; margin: 0 auto;">Welcome!</h1>
+<form class="my-form" name="myform" ng-submit="login()">
     <input type="firstname" name="firstname" placeholder="First Name" autofocus ng-required="true"
-           ng-model="user.firstname">
+           ng-model="user.firstname" autocomplete="off">
 
-    <button type="submit" class="btn"
-            ng-disabled="myform.$invalid">Let's Go!</button>
+    <button type="submit" class="btn ng-invalid"
+            ng-disabled="myform.$invalid">Let's Go Now!!</button>
 </form>
+</div>

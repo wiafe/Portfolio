@@ -4,6 +4,13 @@ var myApp = angular.module('myApp', ["ngRoute", "firebase", "appControllers"]);
 var appControllers = angular.module("appControllers", 
 	["firebase"]);
 
+myApp.controller('HelloController', function($scope, $location) {
+
+    $scope.user = {
+        firstname: ''
+    }
+});
+
 //re-routing pages gives the single page feel
 myApp.config(['$routeProvider', function($routeProvider) {
 	$routeProvider.
@@ -20,7 +27,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
 			controller: 'NameController'
 		}).
         when('/massage', {
-            templateUrl : 'views/project/massage.html',
+            templateUrl : 'views/partials/massage.html',
             controller  : 'NameController'
         }).
         when('/extra', {

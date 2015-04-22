@@ -8,9 +8,7 @@ myApp.controller('NameController',
             $location.path('/welcome');
         };
 
-        this.user = {
-            firstname: "Randy"
-        };
+
 
 	//$scope.register = function() {
 	//	$location.path('/meetings');
